@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PixMiracle</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Announcement Banner -->
+    <div class="announcement-banner bg-primary text-white py-2 w-100 position-fixed top-0 start-0 z-3" style="display: none;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-phone-volume me-2"></i>
+                <span>Have questions? Call us directly at <strong><a href="tel:+918959395787" class="text-white">+91 8959395787</a></strong></span>
+            </div>
+            <button class="btn-close btn-close-white close-banner" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="m-0 h3">PixMiracle</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services.html#business-cards"><i class="fas fa-id-card me-2 text-primary"></i>Business Cards</a></li>
+                            <li><a class="dropdown-item" href="services.html#brochures"><i class="fas fa-file-alt me-2 text-primary"></i>Brochures & Flyers</a></li>
+                            <li><a class="dropdown-item" href="services.html#banners"><i class="fas fa-flag me-2 text-primary"></i>Banners & Signage</a></li>
+                            <li><a class="dropdown-item" href="services.html#marketing"><i class="fas fa-bullhorn me-2 text-primary"></i>Marketing Materials</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="services.html#mug-printing"><i class="fas fa-coffee me-2 text-primary"></i>Mug Printing</a></li>
+                            <li><a class="dropdown-item" href="services.html#tshirt-printing"><i class="fas fa-tshirt me-2 text-primary"></i>T-Shirt Printing</a></li>
+                            <li><a class="dropdown-item" href="services.html#stamps-seals"><i class="fas fa-stamp me-2 text-primary"></i>Stamps & Seals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="training.html" id="trainingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Training
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="trainingDropdown">
+                            <li><a class="dropdown-item" href="training.html#printing-basics"><i class="fas fa-print me-2 text-primary"></i>Printing Basics</a></li>
+                            <li><a class="dropdown-item" href="training.html#graphic-design"><i class="fas fa-palette me-2 text-primary"></i>Graphic Design</a></li>
+                            <li><a class="dropdown-item" href="training.html#digital-marketing"><i class="fas fa-chart-line me-2 text-primary"></i>Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="training.html#web-development"><i class="fas fa-code me-2 text-primary"></i>Web Development</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="training.html#certification"><i class="fas fa-certificate me-2 text-primary"></i>Certification Programs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center ms-lg-2">
+                        <a class="nav-link btn btn-primary text-white px-4" href="contact.html">
+                            <i class="fas fa-paper-plane me-2"></i>Get a Quote
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-primary text-white">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Contact Us</h1>
+            <p class="lead">Get in touch with our team for professional printing solutions</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Contact Information -->
+                <div class="col-lg-5">
+                    <h2 class="display-6 fw-bold mb-4">Get In Touch</h2>
+                    <p class="lead mb-5">Have questions about our services or want to request a quote? Our team is here to help. Reach out using any of the following methods.</p>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary text-white rounded-circle p-3 me-4">
+                            <i class="fas fa-map-marker-alt px-1"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Our Office</h5>
+                            <p class="mb-0">46, Satellite Junction Main Rd<br>Dewas Naka, Indore<br>Madhya Pradesh, 452010</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary text-white rounded-circle p-3 me-4">
+                            <i class="fas fa-phone px-1"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Phone</h5>
+                            <p class="mb-0">
+                                <a href="tel:+918959395787" class="text-dark">+91 8959395787</a><br>
+                                <a href="tel:+919131672887" class="text-dark">+91 9131672887</a>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary text-white rounded-circle p-3 me-4">
+                            <i class="fas fa-envelope px-1"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Email</h5>
+                            <p class="mb-3"><a href="mailto:pixmiracle@gmail.com" class="text-dark">pixmiracle@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary text-white rounded-circle p-3 me-4">
+                            <i class="fas fa-clock px-1"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Business Hours</h5>
+                            <p class="mb-0">Monday - Saturday: 10am - 8pm<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <h5 class="fw-bold mb-3">Follow Us</h5>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="btn btn-outline-primary rounded-circle p-2">
+                                <i class="fab fa-facebook-f px-2"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle p-2">
+                                <i class="fab fa-twitter px-1"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle p-2">
+                                <i class="fab fa-instagram px-1"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary rounded-circle p-2">
+                                <i class="fab fa-linkedin-in px-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm p-4">
+                        <div class="card-body">
+                            <h2 class="display-6 fw-bold mb-4">Send Us a Message</h2>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">First Name*</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Last Name*</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email Address*</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="company" class="form-label">Company/Organization</label>
+                                        <input type="text" class="form-control" id="company">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="service" class="form-label">Service Interested In*</label>
+                                        <select class="form-select" id="service" required>
+                                            <option selected disabled value="">Select a service...</option>
+                                            <option value="business-cards">Business Cards</option>
+                                            <option value="brochures">Brochures & Flyers</option>
+                                            <option value="banners">Banners & Signage</option>
+                                            <option value="marketing">Marketing Materials</option>
+                                            <option value="promotional">Promotional Items</option>
+                                            <option value="custom">Custom Printing</option>
+                                            <option value="mug-printing">Mug Printing</option>
+                                            <option value="tshirt-printing">T-Shirt Printing</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message*</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Subscribe to our newsletter for offers and updates
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center mb-5">Find Us</h2>
+                    <!-- Updated Google Maps embed for Indore location -->
+                    <div class="ratio ratio-21x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.0714370440356!2d75.85834837487325!3d22.688894179513856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fdccab71d447%3A0x65654be7cbcb8d3!2sSatellite%20Junction%20Main%20Rd%2C%20Indore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1700121242585!5m2!1sen!2sin" 
+                            allowfullscreen="" loading="lazy" class="rounded shadow"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <h2 class="display-6 fw-bold text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What are your turnaround times?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our standard turnaround time is 3-5 business days after proof approval, depending on the product and quantity. Rush orders may be available for an additional fee. Please contact us directly for specific turnaround times for your project.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Do you offer design services?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer professional design services for all of our printing products. Our experienced graphic designers can work with you to create custom designs that match your brand and vision. Design fees vary depending on the complexity of the project.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What file formats do you accept for printing?
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We accept a variety of file formats including PDF, AI, PSD, JPEG, and PNG. For best results, we recommend providing high-resolution (300 dpi) PDF files with fonts embedded and all colors converted to CMYK. Vector files (AI, EPS) are preferred for logos and line art.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Can I get samples before placing a large order?
+                                </button>
+                            </h3>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we offer sample kits and single samples for most of our products. This allows you to see and feel the quality of our printing and paper stocks before committing to a larger order. There may be a small fee for custom samples, which is typically credited back on your first order.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    What are your payment terms?
+                                </button>
+                            </h3>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    For new clients, we typically require full payment before production begins. Established clients may be eligible for Net 30 terms with approved credit. We accept major credit cards, bank transfers, and check payments.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold">Ready to get started?</h2>
+                    <p class="lead mb-lg-0">Contact us today for a free consultation and quote.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="#contactForm" class="btn btn-light btn-lg px-4">Send Message</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="h4 mb-4">PixMiracle</h3>
+                    <p>Professional printing services to help your business stand out from the competition.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="training.html" class="text-white text-decoration-none">Training</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#business-cards" class="text-white text-decoration-none">Business Cards</a></li>
+                        <li class="mb-2"><a href="services.html#brochures" class="text-white text-decoration-none">Brochures & Flyers</a></li>
+                        <li class="mb-2"><a href="services.html#banners" class="text-white text-decoration-none">Banners & Signage</a></li>
+                        <li class="mb-2"><a href="services.html#marketing" class="text-white text-decoration-none">Marketing Materials</a></li>
+                        <li class="mb-2"><a href="services.html#mug-printing" class="text-white text-decoration-none">Mug Printing</a></li>
+                        <li class="mb-2"><a href="services.html#tshirt-printing" class="text-white text-decoration-none">T-Shirt Printing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 46, Satellite Junction Main Rd, Dewas Naka, Indore, Madhya Pradesh, 452010</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> <a href="tel:+918959395787" class="text-white">+91 8959395787</a></li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> <a href="mailto:pixmiracle@gmail.com" class="text-white">pixmiracle@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 text-center">
+                <p class="mb-0">&copy; 2025 PixMiracle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html> 

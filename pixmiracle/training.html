@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Programs - PixMiracle</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Announcement Banner -->
+    <div class="announcement-banner bg-primary text-white py-2 w-100 position-fixed top-0 start-0 z-3" style="display: none;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <i class="fas fa-graduation-cap me-2"></i>
+                <span>New Web Development class starting next week! <strong>Early bird discount ends tomorrow</strong></span>
+            </div>
+            <button class="btn-close btn-close-white close-banner" aria-label="Close"></button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="m-0 h3">PixMiracle</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services.html#business-cards"><i class="fas fa-id-card me-2 text-primary"></i>Business Cards</a></li>
+                            <li><a class="dropdown-item" href="services.html#brochures"><i class="fas fa-file-alt me-2 text-primary"></i>Brochures & Flyers</a></li>
+                            <li><a class="dropdown-item" href="services.html#banners"><i class="fas fa-flag me-2 text-primary"></i>Banners & Signage</a></li>
+                            <li><a class="dropdown-item" href="services.html#marketing"><i class="fas fa-bullhorn me-2 text-primary"></i>Marketing Materials</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="services.html#mug-printing"><i class="fas fa-coffee me-2 text-primary"></i>Mug Printing</a></li>
+                            <li><a class="dropdown-item" href="services.html#tshirt-printing"><i class="fas fa-tshirt me-2 text-primary"></i>T-Shirt Printing</a></li>
+                            <li><a class="dropdown-item" href="services.html#stamps-seals"><i class="fas fa-stamp me-2 text-primary"></i>Stamps & Seals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="training.html" id="trainingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Training
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="trainingDropdown">
+                            <li><a class="dropdown-item" href="training.html#printing-basics"><i class="fas fa-print me-2 text-primary"></i>Printing Basics</a></li>
+                            <li><a class="dropdown-item" href="training.html#graphic-design"><i class="fas fa-palette me-2 text-primary"></i>Graphic Design</a></li>
+                            <li><a class="dropdown-item" href="training.html#digital-marketing"><i class="fas fa-chart-line me-2 text-primary"></i>Digital Marketing</a></li>
+                            <li><a class="dropdown-item" href="training.html#web-development"><i class="fas fa-code me-2 text-primary"></i>Web Development</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="training.html#certification"><i class="fas fa-certificate me-2 text-primary"></i>Certification Programs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center ms-lg-2">
+                        <a class="nav-link btn btn-primary text-white px-4" href="contact.html">
+                            <i class="fas fa-paper-plane me-2"></i>Get a Quote
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-primary text-white">
+        <div class="container py-5">
+            <h1 class="display-4 fw-bold">Training Programs</h1>
+            <p class="lead">Learn essential skills in printing, design, web development, and business software</p>
+        </div>
+    </header>
+
+    <!-- Training Navigation -->
+    <section class="bg-light py-4">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-center">
+                <a href="#printing-basics" class="training-nav-item">
+                    <i class="fas fa-print"></i>
+                    <span>Printing Basics</span>
+                </a>
+                <a href="#graphic-design" class="training-nav-item">
+                    <i class="fas fa-palette"></i>
+                    <span>Graphic Design</span>
+                </a>
+                <a href="#digital-marketing" class="training-nav-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Digital Marketing</span>
+                </a>
+                <a href="#web-development" class="training-nav-item">
+                    <i class="fas fa-code"></i>
+                    <span>Web Development</span>
+                </a>
+                <a href="#ui-ux" class="training-nav-item">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <span>UI/UX Design</span>
+                </a>
+                <a href="#tally-prime" class="training-nav-item">
+                    <i class="fas fa-calculator"></i>
+                    <span>Tally Prime</span>
+                </a>
+                <a href="#corporate-workshops" class="training-nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Corporate Workshops</span>
+                </a>
+                <a href="#certification" class="training-nav-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Certification</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-5">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-6 fw-bold mb-4">Expert-Led Training for Print, Digital, and Business Success</h2>
+                    <p class="lead mb-4">At PixMiracle, we believe in sharing knowledge to empower businesses and individuals. Our comprehensive training programs cover everything from printing technology to web development, UI/UX design, and business accounting solutions.</p>
+                    <p>Whether you're a business owner looking to enhance your digital presence, a professional seeking to advance your career with new technical skills, or a student preparing for the job market, our expert-led programs provide practical skills in a hands-on environment tailored to today's industry demands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Printing Basics Section -->
+    <section id="printing-basics" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400" alt="Printing Basics Workshop" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold mb-4">Printing Basics</h2>
+                    <p class="lead">Learn the fundamentals of printing technology and processes</p>
+                    <p>Our Printing Basics program introduces participants to various printing techniques, paper types, color systems, and finishing options. Gain practical knowledge about selecting the right printing method for different projects, troubleshooting common issues, and achieving professional quality results.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <div class="badge bg-light text-dark p-2">Printing Methods</div>
+                        <div class="badge bg-light text-dark p-2">Paper Selection</div>
+                        <div class="badge bg-light text-dark p-2">Color Management</div>
+                        <div class="badge bg-light text-dark p-2">File Preparation</div>
+                        <div class="badge bg-light text-dark p-2">Quality Control</div>
+                    </div>
+                    <div class="mt-4">
+                        <p><strong>Duration:</strong> 2 Days (16 Hours)</p>
+                        <p><strong>Next Session:</strong> June 15-16, 2025</p>
+                        <a href="contact.html" class="btn btn-primary mt-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graphic Design Section -->
+    <section id="graphic-design" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400" alt="Graphic Design Course" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="display-6 fw-bold mb-4">Graphic Design for Print</h2>
+                    <p class="lead">Master design principles specifically for print materials</p>
+                    <p>This comprehensive course covers essential design skills tailored for print production. Learn to create effective layouts, select appropriate typography, work with images, and prepare files properly for printing. Get hands-on experience with industry-standard software like Adobe InDesign, Illustrator, and Photoshop.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <div class="badge bg-light text-dark p-2">Layout Design</div>
+                        <div class="badge bg-light text-dark p-2">Typography</div>
+                        <div class="badge bg-light text-dark p-2">Color Theory</div>
+                        <div class="badge bg-light text-dark p-2">Image Editing</div>
+                        <div class="badge bg-light text-dark p-2">Adobe Suite</div>
+                    </div>
+                    <div class="mt-4">
+                        <p><strong>Duration:</strong> 4 Weeks (2 sessions per week)</p>
+                        <p><strong>Next Session:</strong> Starting July 3, 2025</p>
+                        <a href="contact.html" class="btn btn-primary mt-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Marketing Section -->
+    <section id="digital-marketing" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400" alt="Digital Marketing Workshop" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold mb-4">Digital Marketing Essentials</h2>
+                    <p class="lead">Integrate print and digital strategies for maximum impact</p>
+                    <p>In today's multi-channel world, successful marketing combines both print and digital approaches. This program teaches how to develop integrated marketing campaigns, leverage QR codes and augmented reality in print materials, track campaign performance, and optimize your marketing mix for better results.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <div class="badge bg-light text-dark p-2">Campaign Planning</div>
+                        <div class="badge bg-light text-dark p-2">QR Integration</div>
+                        <div class="badge bg-light text-dark p-2">Augmented Reality</div>
+                        <div class="badge bg-light text-dark p-2">Performance Analysis</div>
+                        <div class="badge bg-light text-dark p-2">Social Media</div>
+                    </div>
+                    <div class="mt-4">
+                        <p><strong>Duration:</strong> 3 Days (24 Hours)</p>
+                        <p><strong>Next Session:</strong> August 10-12, 2025</p>
+                        <a href="contact.html" class="btn btn-primary mt-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Development Section -->
+    <section id="web-development" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400" alt="Web Development Course" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="display-6 fw-bold mb-4">Web Development</h2>
+                    <p class="lead">Learn to build responsive and dynamic websites from scratch</p>
+                    <p>Our comprehensive Web Development program covers everything from HTML/CSS fundamentals to advanced JavaScript frameworks and backend development. Whether you're looking to launch a career as a web developer or enhance your existing skills, this hands-on course will equip you with the practical knowledge needed to create professional websites and web applications.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <div class="badge bg-light text-dark p-2">HTML/CSS</div>
+                        <div class="badge bg-light text-dark p-2">JavaScript</div>
+                        <div class="badge bg-light text-dark p-2">Responsive Design</div>
+                        <div class="badge bg-light text-dark p-2">Frontend Frameworks</div>
+                        <div class="badge bg-light text-dark p-2">Backend Basics</div>
+                    </div>
+                    <div class="mt-4">
+                        <p><strong>Duration:</strong> 8 Weeks (2 sessions per week)</p>
+                        <p><strong>Next Session:</strong> Starting October 5, 2025</p>
+                        <a href="contact.html" class="btn btn-primary mt-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UI/UX Design Section -->
+    <section id="ui-ux" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400" alt="UI/UX Design Workshop" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold mb-4">UI/UX Design</h2>
+                    <p class="lead">Master the art and science of creating exceptional user experiences</p>
+                    <p>This specialized program focuses on user interface and user experience design principles. Learn how to create intuitive, accessible, and visually appealing digital products that users love. From user research and wireframing to prototyping and usability testing, you'll gain a complete understanding of the UI/UX design process using industry-standard tools like Figma and Adobe XD.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <div class="badge bg-light text-dark p-2">User Research</div>
+                        <div class="badge bg-light text-dark p-2">Wireframing</div>
+                        <div class="badge bg-light text-dark p-2">Interaction Design</div>
+                        <div class="badge bg-light text-dark p-2">Prototyping</div>
+                        <div class="badge bg-light text-dark p-2">Usability Testing</div>
+                    </div>
+                    <div class="mt-4">
+                        <p><strong>Duration:</strong> 6 Weeks (2 sessions per week)</p>
+                        <p><strong>Next Session:</strong> Starting November 7, 2025</p>
+                        <a href="contact.html" class="btn btn-primary mt-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tally Prime Section -->
+    <section id="tally-prime" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400" alt="Tally Prime Training" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="display-6 fw-bold mb-4">Tally Prime</h2>
+                    <p class="lead">Master business accounting and financial management</p>
+                    <p>Our Tally Prime training program provides comprehensive instruction on this powerful accounting software. Learn to manage accounts, inventory, taxation, and financial reporting efficiently. This course is ideal for accounting professionals, business owners, and students looking to enhance their financial management skills. Gain practical experience with real-world business scenarios and industry best practices.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <div class="badge bg-light text-dark p-2">Financial Accounting</div>
+                        <div class="badge bg-light text-dark p-2">Inventory Management</div>
+                        <div class="badge bg-light text-dark p-2">GST & Taxation</div>
+                        <div class="badge bg-light text-dark p-2">Payroll Processing</div>
+                        <div class="badge bg-light text-dark p-2">Financial Reporting</div>
+                    </div>
+                    <div class="mt-4">
+                        <p><strong>Duration:</strong> 4 Weeks (3 sessions per week)</p>
+                        <p><strong>Next Session:</strong> Starting December 3, 2025</p>
+                        <a href="contact.html" class="btn btn-primary mt-2">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Workshops Section -->
+    <section id="corporate-workshops" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400" alt="Corporate Workshop" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h2 class="display-6 fw-bold mb-4">Corporate Workshops</h2>
+                    <p class="lead">Customized training programs for teams and organizations</p>
+                    <p>Our specialized corporate workshops are tailored to meet the specific needs of your team. Whether you need training in brand consistency, designing effective marketing materials, or optimizing your print procurement process, we create a customized curriculum that addresses your unique challenges and goals.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <div class="badge bg-light text-dark p-2">Team Training</div>
+                        <div class="badge bg-light text-dark p-2">Brand Guidelines</div>
+                        <div class="badge bg-light text-dark p-2">Marketing Strategy</div>
+                        <div class="badge bg-light text-dark p-2">Cost Optimization</div>
+                        <div class="badge bg-light text-dark p-2">Workflow Efficiency</div>
+                    </div>
+                    <div class="mt-4">
+                        <p><strong>Duration:</strong> Flexible (Based on requirements)</p>
+                        <p><strong>Location:</strong> On-site or at our training center</p>
+                        <a href="contact.html" class="btn btn-primary mt-2">Request Proposal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Programs Section -->
+    <section id="certification" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400" alt="Certification Program" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold mb-4">Certification Programs</h2>
+                    <p class="lead">Industry-recognized credentials for professionals</p>
+                    <p>Enhance your career prospects with our comprehensive certification programs. Developed in partnership with industry associations, these programs provide in-depth knowledge and practical skills that are highly valued in the printing and design industries. Receive a professional certificate upon successful completion.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <div class="badge bg-light text-dark p-2">Print Production</div>
+                        <div class="badge bg-light text-dark p-2">Color Management</div>
+                        <div class="badge bg-light text-dark p-2">Design for Print</div>
+                        <div class="badge bg-light text-dark p-2">Print Management</div>
+                        <div class="badge bg-light text-dark p-2">Sustainable Printing</div>
+                    </div>
+                    <div class="mt-4">
+                        <p><strong>Duration:</strong> 12 Weeks (Part-time)</p>
+                        <p><strong>Next Intake:</strong> September 2025</p>
+                        <a href="contact.html" class="btn btn-primary mt-2">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">What Our Students Say</h2>
+                <p class="lead">Success stories from our training programs</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card border-0 shadow-sm py-4 px-5">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-quote-left fa-3x text-primary mb-3 opacity-25"></i>
+                                        <p class="lead mb-4">The Graphic Design for Print course completely transformed how I approach my design projects. The instructors were knowledgeable and provided practical insights that I use daily in my work. Highly recommended!</p>
+                                        <div>
+                                            <h5 class="fw-bold mb-0">Priya Sharma</h5>
+                                            <p class="text-muted">Freelance Designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border-0 shadow-sm py-4 px-5">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-quote-left fa-3x text-primary mb-3 opacity-25"></i>
+                                        <p class="lead mb-4">As a marketing manager, the Digital Marketing Essentials workshop gave our team valuable tools to integrate our print and online campaigns. We've seen a 30% increase in response rates since implementing these strategies.</p>
+                                        <div>
+                                            <h5 class="fw-bold mb-0">Rajesh Patel</h5>
+                                            <p class="text-muted">Marketing Manager, Horizon Retail</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border-0 shadow-sm py-4 px-5">
+                                    <div class="card-body text-center">
+                                        <i class="fas fa-quote-left fa-3x text-primary mb-3 opacity-25"></i>
+                                        <p class="lead mb-4">The customized corporate workshop PixMiracle created for our design team was excellent. They addressed our specific challenges and provided practical solutions that improved our workflow efficiency by 40%.</p>
+                                        <div>
+                                            <h5 class="fw-bold mb-0">Anjali Desai</h5>
+                                            <p class="text-muted">Creative Director, InnovateTech</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Facilities Section -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Training Facilities</h2>
+                <p class="lead">State-of-the-art environments designed for optimal learning</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://placehold.co/400x300" class="card-img-top" alt="Computer Lab">
+                        <div class="card-body">
+                            <h3 class="h4 card-title">Computer Lab</h3>
+                            <p class="card-text">Equipped with the latest hardware and software, our computer lab provides hands-on experience with industry-standard design and production tools.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://placehold.co/400x300" class="card-img-top" alt="Print Workshop">
+                        <div class="card-body">
+                            <h3 class="h4 card-title">Print Workshop</h3>
+                            <p class="card-text">Experience various printing techniques firsthand in our fully equipped print workshop featuring digital, offset, and specialty printing equipment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://placehold.co/400x300" class="card-img-top" alt="Collaborative Spaces">
+                        <div class="card-body">
+                            <h3 class="h4 card-title">Collaborative Spaces</h3>
+                            <p class="card-text">Our modern classrooms and breakout areas are designed to facilitate group discussions, brainstorming sessions, and collaborative projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training FAQ Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <h2 class="display-6 fw-bold text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Do I need any prior experience to join the training programs?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Most of our introductory courses are designed for beginners with no prior experience. For advanced courses, some basic knowledge or completion of our foundation courses may be required. Each program description includes prerequisite information. If you're unsure, our training advisors can help you choose the right program based on your current skill level.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Are the training materials included in the course fee?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, all necessary training materials, including workbooks, software access during the course, and samples are included in the course fee. You'll also receive digital copies of course materials and additional resources for reference after completing the program.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do you offer online or remote training options?
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, many of our programs are available in both in-person and online formats. Our virtual training uses interactive platforms to ensure engaging learning experiences with live instruction, hands-on projects, and personalized feedback. However, some practical workshops that require specialized equipment are only offered in-person.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Are there any job placement opportunities after certification?
+                                </button>
+                            </h3>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    While we don't guarantee job placement, we do provide career support services for certification program graduates. This includes resume reviews, portfolio development guidance, and connections to our industry network. Many of our corporate partners regularly hire talent from our training programs, and we maintain a job board with current opportunities.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    How are the corporate workshops customized?
+                                </button>
+                            </h3>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our corporate workshop customization process begins with a needs assessment to understand your team's current skills and the specific challenges you're facing. We then design a tailored curriculum that addresses these needs, using your actual projects and materials as examples when possible. The training can be delivered at your location or our facility, and we offer flexible scheduling options to minimize disruption to your operations.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="display-5 fw-bold">Ready to enhance your skills?</h2>
+                    <p class="lead mb-lg-0">Contact us today to discuss your training needs or register for an upcoming program.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="contact.html" class="btn btn-light btn-lg px-4">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="h4 mb-4">PixMiracle</h3>
+                    <p>Professional printing services to help your business stand out from the competition.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="training.html" class="text-white text-decoration-none">Training</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">Training</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="training.html#printing-basics" class="text-white text-decoration-none">Printing Basics</a></li>
+                        <li class="mb-2"><a href="training.html#graphic-design" class="text-white text-decoration-none">Graphic Design</a></li>
+                        <li class="mb-2"><a href="training.html#digital-marketing" class="text-white text-decoration-none">Digital Marketing</a></li>
+                        <li class="mb-2"><a href="training.html#web-development" class="text-white text-decoration-none">Web Development</a></li>
+                        <li class="mb-2"><a href="training.html#certification" class="text-white text-decoration-none">Certification Programs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 46, Satellite Junction Main Rd, Dewas Naka, Indore, Madhya Pradesh, 452010</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> <a href="tel:+918959395787" class="text-white">+91 8959395787</a></li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> <a href="mailto:pixmiracle@gmail.com" class="text-white">pixmiracle@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 text-center">
+                <p class="mb-0">&copy; 2025 PixMiracle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html> 
