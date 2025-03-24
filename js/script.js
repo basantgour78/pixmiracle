@@ -286,8 +286,60 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     
     if (contactForm) {
+        // Check for URL parameters to display success/error messages
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get('status');
+        const formContainer = contactForm.parentElement;
+        
+        if (status === 'success') {
+            // Create success message
+            const successMessage = document.createElement('div');
+            successMessage.setAttribute('style', 'scroll-margin-top: 100px;');
+            successMessage.className = 'alert alert-success mt-4';
+            successMessage.innerHTML = `
+                <h4 class="alert-heading">Message Sent!</h4>
+                <p>Thank you for contacting us. We'll get back to you as soon as possible.</p>
+            `;
+            
+            // Show success message
+            contactForm.reset();
+            formContainer.appendChild(successMessage);
+            
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth' });
+            
+            // Optional: Restore form after some time
+            setTimeout(() => {
+                successMessage.remove();
+                // Clean up the URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }, 6000);
+        } else if (status === 'error') {
+            // Create error message
+            const errorMessage = document.createElement('div');
+            errorMessage.className = 'alert alert-danger mt-4';
+            errorMessage.innerHTML = `
+                <h4 class="alert-heading">Oops! Something went wrong.</h4>
+                <p>We couldn't process your message. Please try again or contact us directly by phone.</p>
+            `;
+            
+            // Show error message
+            formContainer.insertBefore(errorMessage, contactForm);
+            
+            // Scroll to error message
+            errorMessage.scrollIntoView({ behavior: 'smooth' });
+            
+            // Optional: Remove error message after some time
+            setTimeout(() => {
+                errorMessage.remove();
+                // Clean up the URL
+                window.history.replaceState({}, document.title, window.location.pathname);
+            }, 6000);
+        }
+
+        // Client-side validation before submission
         contactForm.addEventListener('submit', function(event) {
-            event.preventDefault();
+            // Only do client-side validation, don't prevent default as we want the form to submit to our PHP handler
             
             // Basic form validation
             let isValid = true;
@@ -312,34 +364,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
             
-            if (isValid) {
-                // In a real implementation, you would send the form data to a server
-                // For now, just show a success message
-                const formContainer = contactForm.parentElement;
-                
-                // Create success message
-                const successMessage = document.createElement('div');
-                successMessage.className = 'alert alert-success mt-4';
-                successMessage.innerHTML = `
-                    <h4 class="alert-heading">Message Sent!</h4>
-                    <p>Thank you for contacting us. We'll get back to you as soon as possible.</p>
-                `;
-                
-                // Replace form with success message
-                contactForm.style.display = 'none';
-                formContainer.appendChild(successMessage);
-                
-                // Reset form (hidden but reset)
-                contactForm.reset();
-                
-                // Scroll to success message
-                successMessage.scrollIntoView({ behavior: 'smooth' });
-                
-                // Optional: Restore form after some time
-                setTimeout(() => {
-                    successMessage.remove();
-                    contactForm.style.display = 'block';
-                }, 8000);
+            if (!isValid) {
+                event.preventDefault(); // Only prevent submission if validation fails
             }
         });
         
